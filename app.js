@@ -9,13 +9,15 @@ const searchInputHeight = document.querySelector("#searchInputHeight").value;
 
 
     //clear input fields
-    searchTextInput.value = "";
-    searchWidthInput.value = "";
-    searchInputHeight.value = "";
-
-   
+    document.querySelector("#searchInputText").value = "";
+    document.querySelector("#searchInputWidth").value = "";
+    document.querySelector("#searchInputHeight").value = "";
+    
 //passing the api funtion and parameters from user inputs
     fetchQRapi(searchTextInput, searchWidthInput, searchInputHeight);
+    
+
+    
 };
 //fetch QR api from go qr api 
 function fetchQRapi(inputText,inputWidth,inputHeight){
